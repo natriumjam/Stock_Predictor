@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Prediction</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <button class="new-prediction-btn">New Prediction</button>
+        </div>
+        
+        <div class="main-content">
+            <h1>Upload Dataset for Prediction</h1>
+            <!-- Form with POST method and enctype for file upload -->
+            <form action="{{ url_for('forecast') }}" method="POST" enctype="multipart/form-data">
+                <div class="file-upload">
+                    <!-- File input for CSV and Excel files -->
+                    <input type="file" name="file" accept=".csv, .xls, .xlsx" required>
+                </div>
+                <p class="upload-instructions">Upload a CSV or Excel file to get predictions.</p>
+                <button type="submit" class="predict-btn" id="predict-btn">Predict</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Link to the JavaScript file -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

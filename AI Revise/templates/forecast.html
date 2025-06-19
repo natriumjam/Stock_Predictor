@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecast Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='forecast.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <h2>Stock Price Forecasts</h2>
+        
+            <h3>SARIMA Model Forecast</h3>
+            <img src="data:image/png;base64,{{ plot_url_sarima }}" alt="SARIMA Forecast" class="forecast-image small-image">
+        
+            <h3>ARIMA Model Forecast</h3>
+            <img src="data:image/png;base64,{{ plot_url_arima }}" alt="ARIMA Forecast" class="forecast-image small-image">
+        
+            <h3>Linear Regression Model Forecast</h3>
+            <img src="data:image/png;base64,{{ plot_url_linreg }}" alt="Linear Regression Forecast" class="forecast-image small-image">
+
+            <p><strong>Akurasi Prediksi:</strong> {{ accuracy }}%</p>
+
+            <!-- Back to Home Button -->
+            <button class="back-to-home-btn" onclick="window.location.href='{{ url_for('index') }}'">Back to Home</button>
+        </div>
+    </div>
+</body>
+</html>

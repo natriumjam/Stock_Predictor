@@ -1,0 +1,94 @@
+/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: #1e1e1e;
+  width: 250px;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.new-prediction-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.new-prediction-btn:hover {
+  background-color: #45a049;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+.recent-list {
+  list-style-type: none;
+}
+
+.recent-list li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.recent-list li:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;  /* Ensure the content is aligned to the top */
+  align-items: center;
+  overflow-y: auto;  /* Allow vertical scrolling if content overflows */
+}
+
+.forecast-section {
+  margin-bottom: 40px;  /* Space between each forecast section */
+  text-align: center;  /* Center align the content */
+}
+
+.small-image {
+  max-width: 80%; /* Adjust the width of the images */
+  height: auto;   /* Ensure aspect ratio is maintained */
+  display: block;
+  margin: 20px auto; /* Center the images horizontally and add some spacing around them */
+}
+
+.back-to-home-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px; /* Add spacing at the top */
+}
+
+.back-to-home-btn:hover {
+  background-color: #45a049;
+}
