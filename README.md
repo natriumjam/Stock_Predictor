@@ -1,6 +1,6 @@
 # 📊 Stock Price Prediction Using ARIMA, SARIMA, and Linear Regression
 
-This project explores and compares multiple time series forecasting models — ARIMA, SARIMA, and Linear Regression — to predict stock prices based on historical data. Built as part of a group research project and PKM-KC proposal at BINUS University.
+This group project explores and compares multiple time series forecasting models — ARIMA, SARIMA, and Linear Regression — to predict stock prices based on historical data. Built as part of a group research project and PKM-KC proposal at BINUS University.
 
 ---
 
